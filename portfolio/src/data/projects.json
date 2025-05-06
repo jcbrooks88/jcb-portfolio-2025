@@ -1,0 +1,11 @@
+[
+    {
+      "title": "Wellness Rounds NC",
+      "techStack": ["React", "Node.js", "MongoDB", "GraphQL"],
+      "description": "A platform for safe space discussions among healthcare professionals.",
+      "github": "https://github.com/your-username/wellnessrounds-nc",
+      "demo": "https://wellnessrounds-nc.vercel.app",
+      "image": "/assets/wellnessrounds.png"
+    }
+  ]
+  
