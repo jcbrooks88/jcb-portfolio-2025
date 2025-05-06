@@ -4,12 +4,12 @@ import Link from "next/link";
 const projects = [
   {
     title: "Wellness Rounds NC",
-    techStack: ["React", "Node.js", "MongoDB", "GraphQL"],
+    techStack: ["React + Vite + Apollo Client", "Node.js", "MongoDB + Mongoose", "GraphQL", "Express + Apollo Server", "Typescript"],
     description:
       "A platform for safe space discussions among healthcare professionals.",
-    github: "https://github.com/your-username/wellnessrounds-nc",
+    github: "https://github.com/jcbrooks88/WELLNESSROUNDS-NC",
     demo: "https://wellnessrounds-nc.vercel.app",
-    image: "/assets/wellnessrounds.png",
+    image: "/assets/JCB.jpeg",
   },
 ];
 
