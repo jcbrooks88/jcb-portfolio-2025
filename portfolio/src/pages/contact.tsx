@@ -1,10 +1,13 @@
 // pages/contact.tsx
+import Layout from "@/components/Layout";
+
 export default function Contact() {
-    return (
+  return (
+    <Layout>
       <main className="min-h-screen bg-white p-6 md:p-12">
         <h1 className="text-4xl font-bold mb-4">Contact Me</h1>
         <p className="text-gray-700 mb-6 max-w-xl">
-          I'm currently open to opportunities and collaborations. Feel free to reach out to me!
+          I&apos;m currently open to opportunities and collaborations. Feel free to reach out to me!
         </p>
         <ul className="text-blue-600 space-y-2">
           <li>
@@ -24,6 +27,6 @@ export default function Contact() {
           </li>
         </ul>
       </main>
-    );
-  }
-  
+    </Layout>
+  );
+}
