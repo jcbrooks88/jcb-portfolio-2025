@@ -10,7 +10,9 @@ export default function Layout({ children }: { children: ReactNode }) {
         <div className="space-x-4">
           <Link href="/projects" className="hover:underline">Projects</Link>
           <Link href="/about" className="hover:underline">About</Link>
+          <Link href="/resume" className="hover:underline"></Link>
           <Link href="/contact" className="hover:underline">Contact</Link>
+          <Link href="/underway" className="hover:underline">Underway</Link>
         </div>
       </nav>
       <main className="flex-grow">{children}</main>

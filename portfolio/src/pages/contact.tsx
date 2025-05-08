@@ -11,17 +11,17 @@ export default function Contact() {
         </p>
         <ul className="text-blue-600 space-y-2">
           <li>
-            <a href="mailto:your.email@example.com" className="hover:underline">
-              your.email@example.com
+            <a href="mailto:jcbrooks.tech@gmail.com" className="hover:underline">
+              jcbrooks.tech@gmail.com
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/your-profile" target="_blank" className="hover:underline">
+            <a href="www.linkedin.com/in/jcbrooks88" target="_blank" className="hover:underline">
               LinkedIn Profile
             </a>
           </li>
           <li>
-            <a href="https://github.com/your-username" target="_blank" className="hover:underline">
+            <a href="https://github.com/jcbrooks88" target="_blank" className="hover:underline">
               GitHub Profile
             </a>
           </li>
