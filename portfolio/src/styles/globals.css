@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Optional: Custom base overrides */
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-primary;
+  }
+
+  a {
+    @apply text-secondary hover:text-accent;
+  }
+}
+
+/* Optional: Custom utility classes */
+@layer utilities {
+  .btn-custom {
+    @apply px-4 py-2 rounded bg-primary text-white hover:bg-accent transition;
+  }
+
+  .card-custom {
+    @apply p-4 rounded-lg shadow-md bg-white border border-background;
+  }
+}

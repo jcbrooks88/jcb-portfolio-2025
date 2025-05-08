@@ -16,7 +16,7 @@ export default function Contact() {
             </a>
           </li>
           <li>
-            <a href="www.linkedin.com/in/jcbrooks88" target="_blank" className="hover:underline">
+            <a href="https://www.linkedin.com/in/jcbrooks88/" target="_blank" className="hover:underline">
               LinkedIn Profile
             </a>
           </li>

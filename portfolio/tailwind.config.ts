@@ -8,7 +8,15 @@ const config: Config = {
   "./src/app/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: '#1A73E8',
+        secondary: '#FBBF24',
+        accent: '#34D399',
+        background: '#F3F4F6',
+        foreground: '#111827',
+      },
+    },
   },
   plugins: [],
 };
