@@ -17,7 +17,7 @@ export default function Underway() {
         <section className="w-full max-w-3xl">
 
         <h1 className="text-4xl sm:text-5xl font-extrabold text-center mb-14 tracking-tight leading-tight sm:leading-snug text-balance bg-clip-text text-transparent bg-gradient-to-r from-orange to-burgundy drop-shadow-sm">
-            What&#39;s Next 🚀
+            What&#39;s Next 
         </h1>
 
           <div className="relative border-l-2 border-gray-200 pl-8 space-y-20">

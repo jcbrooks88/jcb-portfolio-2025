@@ -12,12 +12,7 @@ export default function Home() {
           Junior Software Developer with a nursing background, passionate about building responsive, accessible, and user-friendly full-stack applications.
         </p>
         <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0 w-full max-w-xs sm:max-w-none items-center justify-center">
-          <Link
-            href="/projects"
-            className="w-full sm:w-auto text-center bg-gray-100 border px-4 py-2 rounded-full hover:bg-gray-200"
-          >
-            View Projects
-          </Link>
+
           <Link
             href="/contact"
             className="w-full sm:w-auto text-center bg-gray-100 border px-4 py-2 rounded-full hover:bg-gray-200"

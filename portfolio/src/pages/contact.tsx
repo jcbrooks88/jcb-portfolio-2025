@@ -22,7 +22,9 @@ export default function Contact() {
   return (
     <Layout>
       <main className="min-h-screen flex flex-col items-center justify-center rounded-2xl shadow-xl text-center bg-white p-6 md:p-12">
-        <h1 className="text-4xl font-bold mb-4">Contact Me</h1>
+      <h1 className="text-4xl sm:text-5xl font-extrabold text-center mb-14 tracking-tight leading-tight sm:leading-snug text-balance bg-clip-text text-transparent bg-gradient-to-r from-orange to-burgundy drop-shadow-sm">
+        Contact Me
+      </h1>
         <h2 className="text-gray-700 mb-8 max-w-xl">
           I&apos;m currently open to opportunities and collaborations. 
           <br />
