@@ -12,7 +12,7 @@ export default function Home() {
         <div className="flex space-x-4">
           <Link
             href="/projects"
-            className="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700"
+            className="bg-accent text-white px-4 py-2 rounded-full hover:bg-blue-700"
           >
             View Projects
           </Link>
