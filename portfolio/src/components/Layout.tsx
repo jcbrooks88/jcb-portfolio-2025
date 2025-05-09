@@ -8,9 +8,9 @@ export default function Layout({ children }: { children: ReactNode }) {
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
   const navLinks = [
-    { href: "/projects", label: "Projects" },
     { href: "/about", label: "About" },
     { href: "/resume", label: "Resume" },
+    { href: "/projects", label: "Projects" },
     { href: "/contact", label: "Contact" },
     { href: "/underway", label: "Underway" },
   ];
