@@ -16,9 +16,9 @@ export default function Underway() {
       <main className="min-h-screen bg-gray-50 flex flex-col items-center rounded-2xl shadow-2xl px-6 py-14 sm:px-8">
         <section className="w-full max-w-3xl">
 
-          <h1 className="text-4xl sm:text-5xl font-extrabold text-center text-grayDark mb-14 tracking-tight">
+        <h1 className="text-4xl sm:text-5xl font-extrabold text-center mb-14 tracking-tight leading-tight sm:leading-snug text-balance bg-clip-text text-transparent bg-gradient-to-r from-orange to-burgundy drop-shadow-sm">
             What&#39;s Next 🚀
-          </h1>
+        </h1>
 
           <div className="relative border-l-2 border-gray-200 pl-8 space-y-20">
 
