@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import { motion } from "framer-motion";
+import { FiTool, FiTrendingUp, FiTarget } from "react-icons/fi";
 
 export default function Underway() {
   const timelineVariants = {
@@ -7,14 +8,19 @@ export default function Underway() {
     visible: { opacity: 1, y: 0 },
   };
 
+  const cardBaseClasses =
+    "bg-white rounded-2xl border shadow-sm p-6 transition transform hover:shadow-lg hover:scale-[1.03] duration-200";
+
   return (
     <Layout>
-      <main className="min-h-screen bg-white flex flex-col items-center rounded-2xl shadow-xl px-4 py-10 sm:px-6">
-        <section className="w-full max-w-2xl">
+      <main className="min-h-screen bg-gray-50 flex flex-col items-center rounded-2xl shadow-2xl px-6 py-14 sm:px-8">
+        <section className="w-full max-w-3xl">
 
-          <h1 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-10">Coming 🔜</h1>
+          <h1 className="text-4xl sm:text-5xl font-extrabold text-center text-grayDark mb-14 tracking-tight">
+            What&#39;s Next 🚀
+          </h1>
 
-          <div className="relative border-l-2 border-gray-300 pl-6 space-y-16">
+          <div className="relative border-l-2 border-gray-200 pl-8 space-y-20">
 
             {/* Currently Working On */}
             <motion.div
@@ -25,14 +31,18 @@ export default function Underway() {
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.6, ease: "easeOut" }}
             >
-              <div className="absolute -left-4 top-0 w-3 h-3 bg-orange rounded-full group-hover:scale-125 transition-transform"></div>
-              <h2 className="text-xl font-semibold text-orange mb-2">Currently Working On</h2>
-              <ul className="list-disc list-inside space-y-1 text-gray-700">
-                <li>Building a <strong>full-stack healthcare dashboard</strong> app — HIPAA-compliant style CRUD features and role-based access</li>
-                <li>Implementing <strong>GraphQL advanced patterns</strong> — pagination, nested queries, and Apollo cache management</li>
-                <li>Enhancing <strong>Cypress component and E2E tests</strong> in existing projects to strengthen automated testing skills</li>
-                <li>Refactoring projects with <strong>TypeScript best practices</strong> — strict typing, reusable generics, and safer component props</li>
-              </ul>
+
+              <div className={`${cardBaseClasses} border-orange bg-gray-100`}>
+                <h2 className="flex items-center text-2xl font-semibold text-orange mb-4 gap-2">
+                  <FiTool className="w-6 h-6 text-orange-500" /> Currently Building
+                </h2>
+                <ul className="list-disc list-inside space-y-2 text-grayDark leading-relaxed">
+                  <li>Developing a <strong>full-stack healthcare dashboard</strong> featuring HIPAA-conscious CRUD operations and role-based access control</li>
+                  <li>Implementing <strong>advanced GraphQL patterns</strong> including pagination, nested queries, and Apollo cache optimization</li>
+                  <li>Enhancing project robustness with <strong>Cypress-driven component and end-to-end testing</strong></li>
+                  <li>Refactoring applications with <strong>TypeScript best practices</strong>: strict typing, reusable generics, and scalable component interfaces</li>
+                </ul>
+              </div>
             </motion.div>
 
             {/* Next in Line */}
@@ -44,14 +54,18 @@ export default function Underway() {
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
             >
-              <div className="absolute -left-4 top-0 w-3 h-3 bg-teal rounded-full group-hover:scale-125 transition-transform"></div>
-              <h2 className="text-xl font-semibold text-teal mb-2">Next in Line</h2>
-              <ul className="list-disc list-inside space-y-1 text-gray-700">
-                <li>Deploying full-stack projects using <strong>Docker</strong> and <strong>Render / Railway</strong> for production-ready experience</li>
-                <li>Integrating <strong>authentication best practices</strong> — OAuth, refresh tokens, secure cookies</li>
-                <li>Contributing to an <strong>open-source project</strong> (healthcare or education focused) to build collaboration and community experience</li>
-                <li>Learning <strong>Next.js</strong> (App Router + Server Components) to expand React ecosystem knowledge</li>
-              </ul>
+
+              <div className={`${cardBaseClasses} border-teal bg-gray-100`}>
+                <h2 className="flex items-center text-2xl font-semibold text-teal mb-4 gap-2">
+                  <FiTrendingUp className="w-6 h-6 text-teal" /> Upcoming Initiatives
+                </h2>
+                <ul className="list-disc list-inside space-y-2 text-gray-800 leading-relaxed">
+                  <li>Deploying production-grade applications using <strong>Docker</strong> and platforms like <strong>Render</strong> or <strong>Railway</strong></li>
+                  <li>Integrating modern <strong>authentication strategies</strong> such as OAuth, refresh tokens, and secure cookies</li>
+                  <li>Contributing to <strong>open-source projects</strong> with a focus on healthcare and education to deepen collaboration experience</li>
+                  <li>Expanding expertise in the React ecosystem by mastering <strong>Next.js (App Router & Server Components)</strong></li>
+                </ul>
+              </div>
             </motion.div>
 
             {/* Future Plans */}
@@ -63,14 +77,18 @@ export default function Underway() {
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
             >
-              <div className="absolute -left-4 top-0 w-3 h-3 bg-burgundy rounded-full group-hover:scale-125 transition-transform"></div>
-              <h2 className="text-xl font-semibold text-burgundy mb-2">Future Plans</h2>
-              <ul className="list-disc list-inside space-y-1 text-gray-700">
-                <li>Obtaining <strong>AWS Certified Cloud Practitioner</strong> or <strong>Azure Fundamentals</strong> to strengthen cloud deployment knowledge</li>
-                <li>Exploring <strong>AI integrations</strong> — OpenAI API, Hugging Face models, or medical data analysis tools</li>
-                <li>Learning <strong>mobile development basics</strong> with React Native or Expo to diversify application platforms</li>
-                <li>Designing and launching a <strong>personal healthcare SaaS project</strong> as a long-term capstone portfolio piece</li>
-              </ul>
+
+              <div className={`${cardBaseClasses} border-burgundy bg-gray-100`}>
+                <h2 className="flex items-center text-2xl font-semibold text-burgundy mb-4 gap-2">
+                  <FiTarget className="w-6 h-6 text-burgundy" /> Future Aspirations
+                </h2>
+                <ul className="list-disc list-inside space-y-2 text-gray-800 leading-relaxed">
+                  <li>Earning <strong>AWS Certified Cloud Practitioner</strong> or <strong>Microsoft Azure Fundamentals</strong> credentials</li>
+                  <li>Exploring <strong>AI integrations</strong> using OpenAI APIs, Hugging Face models, and healthcare data analytics</li>
+                  <li>Broadening platform reach by learning <strong>mobile development</strong> with React Native and Expo</li>
+                  <li>Designing and launching a <strong>personal healthcare SaaS product</strong> as a capstone portfolio initiative</li>
+                </ul>
+              </div>
             </motion.div>
 
           </div>
