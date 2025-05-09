@@ -1,4 +1,3 @@
-// components/ProjectCard.tsx
 import Image from "next/image";
 import Link from "next/link";
 
@@ -20,7 +19,7 @@ export default function ProjectCard({
   image,
 }: ProjectCardProps) {
   return (
-    <div className="bg-gray-50 rounded-2xl shadow-lg overflow-hidden">
+    <div className="bg-background rounded-2xl shadow-xl hover:shadow-2xl transform transition duration-300 hover:scale-[1.02] border border-gray-200 overflow-hidden">
       <Image
         src={image}
         alt={title}
@@ -28,30 +27,30 @@ export default function ProjectCard({
         height={400}
         className="w-full h-48 object-cover"
       />
-      <div className="p-4">
-        <h2 className="text-2xl font-semibold mb-2">{title}</h2>
-        <p className="text-sm text-gray-700 mb-4">{description}</p>
+      <div className="p-6">
+        <h2 className="text-2xl font-bold mb-2 text-burgundy tracking-wide">{title}</h2>
+        <p className="text-sm text-gray-700 mb-4 leading-relaxed">{description}</p>
         <div className="flex flex-wrap gap-2 mb-4">
           {techStack.map((tech, i) => (
             <span
               key={i}
-              className="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs"
+              className="bg-white border border-teal text-teal px-3 py-1 rounded-full text-xs font-medium shadow-sm"
             >
               {tech}
             </span>
           ))}
         </div>
-        <div className="flex justify-between text-sm">
+        <div className="flex justify-between items-center text-sm font-medium">
           <Link
             href={github}
-            className="text-blue-600 hover:underline"
+            className="text-orange hover:text-teal transition-colors duration-200"
             target="_blank"
           >
             GitHub
           </Link>
           <Link
             href={demo}
-            className="text-green-600 hover:underline"
+            className="text-orange hover:text-teal transition-colors duration-200"
             target="_blank"
           >
             Live Demo
