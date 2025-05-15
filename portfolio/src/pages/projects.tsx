@@ -1,7 +1,7 @@
 // pages/projects.tsx
 import Layout from "@/components/Layout";
 import ProjectCard from "@/components/ProjectCard";
-import { wellness } from "@/data/WRNC";
+import { wellness } from "@/projects/WRNC";
 
 export default function ProjectsPage() {
   return (

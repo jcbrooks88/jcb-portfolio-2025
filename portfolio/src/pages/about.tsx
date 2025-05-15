@@ -26,7 +26,7 @@ export default function About() {
 
             <div className="md:w-2/3 text-gray-700 leading-relaxed text-lg space-y-6">
               <p>
-                <span className="text-xl font-semibold text-burgundy block mb-2">
+                <span className="text-xl font-semibold text-orange block mb-2">
                   Hi, I’m Jeffery 👋🏾
                 </span>
                 I&#39;m a Junior Software Developer with a background in nursing and a passion for building web applications that make a difference.
