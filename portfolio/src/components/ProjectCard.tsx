@@ -19,7 +19,7 @@ export default function ProjectCard({
   image,
 }: ProjectCardProps) {
   return (
-    <div className="bg-background rounded-2xl shadow-xl hover:shadow-2xl transform transition duration-300 hover:scale-[1.02] border border-gray-200 overflow-hidden">
+    <div className="bg-background rounded-2xl shadow-md hover:shadow-xl hover:ring-2 hover:ring-orange/30 hover:bg-tertiary transform transition-all duration-300 ease-in-out hover:scale-[1.02] border border-gray-200 overflow-hidden">
       <Image
         src={image}
         alt={title}
@@ -30,6 +30,7 @@ export default function ProjectCard({
       <div className="p-6">
         <h2 className="text-2xl font-bold mb-2 text-burgundy tracking-wide">{title}</h2>
         <p className="text-sm text-gray-700 mb-4 leading-relaxed">{description}</p>
+        
         <div className="flex flex-wrap gap-2 mb-4">
           {techStack.map((tech, i) => (
             <span
@@ -40,18 +41,19 @@ export default function ProjectCard({
             </span>
           ))}
         </div>
+
         <div className="flex justify-between items-center text-sm font-medium">
           <Link
             href={github}
-            className="text-orange hover:text-teal transition-colors duration-200"
             target="_blank"
+            className="text-orange hover:text-teal transition-colors duration-200 underline-offset-2 hover:underline"
           >
             GitHub
           </Link>
           <Link
             href={demo}
-            className="text-orange hover:text-teal transition-colors duration-200"
             target="_blank"
+            className="text-orange hover:text-teal transition-colors duration-200 underline-offset-2 hover:underline"
           >
             Live Demo
           </Link>

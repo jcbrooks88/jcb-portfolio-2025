@@ -1,4 +1,3 @@
-
 export const wellness = [
     {
       title: "Wellness Rounds NC",
