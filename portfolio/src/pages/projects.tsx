@@ -2,6 +2,7 @@ import Layout from "@/components/Layout";
 import ProjectCard from "@/components/ProjectCard";
 import { wellness } from "@/projects/WRNC";
 import { cars } from "@/projects/UCF";
+import { schedule } from "@/projects/NSA";
 
 export default function ProjectsPage() {
   return (
@@ -13,6 +14,13 @@ export default function ProjectsPage() {
 
         {/* Wrap both sections in a grid container */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+
+        <section className="grid grid-cols-1 sm:grid-cols-[repeat(auto-fit,_minmax(320px,_1fr))] gap-4">
+            {schedule.map((project, index) => (
+              <ProjectCard key={index} {...project} />
+            ))}
+          </section>
+
           <section className="grid grid-cols-1 sm:grid-cols-[repeat(auto-fit,_minmax(320px,_1fr))] gap-4">
             {wellness.map((project, index) => (
               <ProjectCard key={index} {...project} />
