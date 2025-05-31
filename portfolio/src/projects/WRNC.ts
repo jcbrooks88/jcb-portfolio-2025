@@ -12,7 +12,7 @@ export const wellness = [
       description:
         "A platform for safe space discussions among healthcare professionals.",
       github: "https://github.com/jcbrooks88/WELLNESSROUNDS-NC",
-      demo: "https://wellnessrounds-nc.vercel.app",
+      demo: "https://youtu.be/EYYJw8g3Gjo",
       image: "/assets/WRNC.png",
     },
     // Add more projects here as needed

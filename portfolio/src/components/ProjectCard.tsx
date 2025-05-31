@@ -25,8 +25,9 @@ export default function ProjectCard({
         alt={title}
         width={600}
         height={400}
-        className="w-full h-48 object-cover"
+        className="w-full h-48 object-cover object-top"
       />
+
       <div className="p-6">
         <h2 className="text-2xl font-bold mb-2 text-burgundy tracking-wide">{title}</h2>
         <p className="text-sm text-gray-700 mb-4 leading-relaxed">{description}</p>
