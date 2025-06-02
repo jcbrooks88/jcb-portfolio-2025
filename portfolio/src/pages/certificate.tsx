@@ -16,7 +16,7 @@ export default function Certificate() {
 
   return (
     <Layout>
-      <main className="min-h-screen bg-gradient-to-b from-gray-50 to-white flex flex-col items-center justify-start px-4 py-16 sm:px-6">
+      <main className="min-h-screen bg-white/90 rounded-2xl shadow-xl flex flex-col items-center justify-start px-4 py-16 sm:px-6">
         <h1 className="text-4xl sm:text-5xl font-extrabold text-center mb-14 tracking-tight leading-tight sm:leading-snug text-balance bg-clip-text text-transparent bg-gradient-to-r from-orange to-burgundy drop-shadow-sm">
             Boot Camp Certificate
         </h1>

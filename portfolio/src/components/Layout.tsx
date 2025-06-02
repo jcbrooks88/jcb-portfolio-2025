@@ -19,18 +19,18 @@ export default function Layout({ children }: { children: ReactNode }) {
   return (
     <div className="min-h-screen flex flex-col font-sans bg-background text-grayDark">
       {/* Navbar */}
-      <nav className="fixed top-0 w-full z-50 bg-burgundy/90 backdrop-blur-sm shadow-md px-6 py-4">
+      <nav className="fixed top-0 w-full z-50 bg-gradient-to-r from-orange to-burgundy backdrop-blur-sm shadow-md px-6 py-4">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           {/* Brand */}
           <Link
             href="/"
-            className="text-white text-2xl font-extrabold tracking-wide hover:text-orange transition-colors"
+            className="text-background text-2xl font-extrabold tracking-wide hover:text-white transition-colors"
           >
             Jeffery Brooks
           </Link>
 
           {/* Desktop Nav */}
-          <div className="hidden md:flex space-x-8 text-sm font-semibold text-white">
+          <div className="hidden md:flex space-x-8 text-sm font-medium text-background">
             {navLinks.map(({ href, label }) => (
               <Link
                 key={href}
@@ -74,7 +74,7 @@ export default function Layout({ children }: { children: ReactNode }) {
       </div>
 
       {/* Main Content */}
-      <main className="flex-grow px-4 py-24 md:py-28 max-w-7xl mx-auto w-full">
+      <main className="flex-grow px-4 py-24 md:py-28 max-w-3xl mx-auto w-full">
         {children}
       </main>
 
