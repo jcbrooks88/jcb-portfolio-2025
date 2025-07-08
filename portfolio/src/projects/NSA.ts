@@ -18,6 +18,5 @@ export const schedule = [
       demo: "https://youtu.be/lptyIg905PM",
       image: "/assets/NSA.png",
     },
-    // Add more projects here as needed
   ];
   

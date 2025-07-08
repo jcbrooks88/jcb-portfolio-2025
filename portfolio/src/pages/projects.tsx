@@ -3,6 +3,7 @@ import ProjectCard from "@/components/ProjectCard";
 import { wellness } from "@/projects/WRNC";
 import { cars } from "@/projects/UCF";
 import { schedule } from "@/projects/NSA";
+import { tarot } from "@/projects/TAROT";
 
 export default function ProjectsPage() {
   return (
@@ -29,6 +30,11 @@ export default function ProjectsPage() {
 
           <section className="grid grid-cols-1 sm:grid-cols-[repeat(auto-fit,_minmax(320px,_1fr))] gap-4">
             {cars.map((project, index) => (
+              <ProjectCard key={index} {...project} />
+            ))}
+          </section>
+          <section className="grid grid-cols-1 sm:grid-cols-[repeat(auto-fit,_minmax(320px,_1fr))] gap-4">
+            {tarot.map((project, index) => (
               <ProjectCard key={index} {...project} />
             ))}
           </section>
