@@ -1,6 +1,6 @@
 export const wellness = [
     {
-      title: "Wellness Rounds NC - Healthcare Professional Discussion Board",
+      title: "Wellness Rounds NC: Healthcare Professional Discussion Board",
       techStack: [
         "React + Vite + Apollo Client",
         "Node.js",
