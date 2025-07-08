@@ -1,6 +1,6 @@
 export const schedule = [
     {
-      title: "Employee Scheduling App",
+      title: "Employee Scheduling Application",
       techStack: [
         "React 19 + Vite + TypeScript",
         "TailwindCSS",

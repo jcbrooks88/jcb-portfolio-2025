@@ -1,6 +1,6 @@
 export const tarot = [
     {
-      title: "Afro Tarot App",
+      title: "Educational Tarot Application",
       techStack: [
         "Next.js 15 + React 19",
         "TailwindCSS 4",
